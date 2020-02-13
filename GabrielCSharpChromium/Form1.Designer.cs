@@ -33,7 +33,6 @@
             this.btnRefresh = new System.Windows.Forms.Button();
             this.txtURL = new System.Windows.Forms.TextBox();
             this.pContainer = new System.Windows.Forms.Panel();
-            this.btnGo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnBack
@@ -72,7 +71,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txtURL.Location = new System.Drawing.Point(140, 15);
             this.txtURL.Name = "txtURL";
-            this.txtURL.Size = new System.Drawing.Size(598, 20);
+            this.txtURL.Size = new System.Drawing.Size(648, 20);
             this.txtURL.TabIndex = 3;
             this.txtURL.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtURL_KeyPress);
             // 
@@ -86,23 +85,11 @@
             this.pContainer.Size = new System.Drawing.Size(776, 397);
             this.pContainer.TabIndex = 4;
             // 
-            // btnGo
-            // 
-            this.btnGo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnGo.Location = new System.Drawing.Point(744, 15);
-            this.btnGo.Name = "btnGo";
-            this.btnGo.Size = new System.Drawing.Size(44, 20);
-            this.btnGo.TabIndex = 5;
-            this.btnGo.Text = "Go";
-            this.btnGo.UseVisualStyleBackColor = true;
-            this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnGo);
             this.Controls.Add(this.pContainer);
             this.Controls.Add(this.txtURL);
             this.Controls.Add(this.btnRefresh);
@@ -125,7 +112,6 @@
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.TextBox txtURL;
         private System.Windows.Forms.Panel pContainer;
-        private System.Windows.Forms.Button btnGo;
     }
 }
 
