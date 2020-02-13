@@ -12,6 +12,12 @@ namespace GabrielCSharpChromium
         {
             InitializeComponent();
 
+         
+        }
+
+        ChromiumWebBrowser chrome;
+        private void Form1_Load(object sender, EventArgs e)
+        {
             CefSettings cefSettings = new CefSettings();
             CefSettings settings = cefSettings;
             //initialization
@@ -22,8 +28,6 @@ namespace GabrielCSharpChromium
             chrome.Dock = DockStyle.Fill;
             chrome.AddressChanged += Chrome_AddressChanged;
         }
-
-        ChromiumWebBrowser chrome;
 
         private void Chrome_AddressChanged(object sender, AddressChangedEventArgs e)
         {
@@ -71,5 +75,6 @@ namespace GabrielCSharpChromium
             Cef.Shutdown();
         }
 
+        
     }
 }
